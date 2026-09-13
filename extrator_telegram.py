@@ -121,6 +121,7 @@ def input_message(message):
 
     # bot.reply_to(message, f'💬 Resposta da Lia:\n{resposta}')
     bot.reply_to(message, f'💬 {resposta}')
+    print(f'🛣️ Redirecionamento de bots: {resposta_json["ROTEAMENTO"]} | 💬 Mensagem para Bot: {resposta_json["PAYLOAD_AGENTE"]}')
 
     # Salva as mensagens em um arquivo JSON, realizando o append com a data e hora
     log_entry = {

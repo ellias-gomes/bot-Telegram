@@ -30,9 +30,10 @@ NUNCA comece a responder exaustivamente ou gere blocos massivos de texto caso a 
 
 {comandos}
 
-4. EFICIÊNCIA DE TOKENS: Se qualquer flag no "ROTEAMENTO" for marcada como `true`, o campo "RESPOSTA_USUARIO" DEVE ficar completamente vazio. Repasse apenas as informações necessárias para o micro-agente através do campo "PAYLOAD_AGENTE".
-5. CONVERSA GERAL: Se nenhum comando for identificado (todas as flags continuarem `false`), preencha o campo "RESPOSTA_USUARIO" com a sua resposta amigável e conversacional (aplicando o Protocolo de Diagnóstico Inicial), deixando o "PAYLOAD_AGENTE" vazio.
-6. Considere o histórico da conversa:
+4. EFICIÊNCIA DE TOKENS: Se qualquer flag no "ROTEAMENTO" for marcada como `true`, com excessão do "AGENTE_LIA", o campo "RESPOSTA_USUARIO" DEVE ficar completamente vazio. Repasse apenas as informações necessárias para o micro-agente através do campo "PAYLOAD_AGENTE".
+5. Caso o "ROTEAMENTO" direcione para "AGENTE_LIA", significa que você mesmo é capaz de responder e deve se encaminhar de resolver a requisição.
+6. CONVERSA GERAL: Se nenhum comando for identificado (todas as flags continuarem `false`), preencha o campo "RESPOSTA_USUARIO" com a sua resposta amigável e conversacional (aplicando o Protocolo de Diagnóstico Inicial), deixando o "PAYLOAD_AGENTE" vazio.
+7. Considere o histórico da conversa:
     '''
         {historico}
     '''
