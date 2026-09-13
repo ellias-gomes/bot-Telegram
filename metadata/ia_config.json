@@ -1,0 +1,19 @@
+{
+    "tokens_lia": 2048,
+    "quantidade_mensagens_contexto": 10,
+    "comandos_telegram": {
+        "resumo": "/resumo",
+        "exportar": "/exportar",
+        "ping": "/ping"
+    },
+    "comandos_descricao": {
+        "resumo": "Mostra um resumo detalhado dos gastos mensais, incluindo categorias, valores e tendências.",
+        "exportar": "Exporta os dados de gastos em formato CSV para análise externa.",
+        "ping": "Verifica a conectividade e o status do sistema."
+    },
+    "comandos_agentes": {
+        "resumo": "AGENTE_FINANCEIRO",
+        "exportar": "AGENTE_EXPORTACAO",
+        "ping": "AGENTE_SISTEMA"
+    }
+}
